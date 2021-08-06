@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wRipple - Do more something with your ripple</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendor/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header id="header" class="position-relative">
+        <div class="position-absolute top-0 start-0 bottom-0 end-0 z-10">
+            <div class="header__bg position-relative w-100 h-100">
+                <div class="header__bg--gradient position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 z-10"></div>
+                <div class="header__bg--dark position-absolute w-100 h-100 top-0 start-0 bottom-0 end-0 z-20"></div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark position-relative z-30 py-4 mb-5">
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+                        <img src="./assets/images/logo.png" class="img-fluid logo__img" alt="">
+                        <span class="logo__text text-white fw-bold fs-2 d-inline-block ms-1">wRipple</span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#partner">Partner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#airdrop">Airdrop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#howtobuy">How To Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#roadmap">Roadmap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="get-start mt-5">
+            <div class="container mx-auto position-relative z-20 text-white px-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="text-white fw-bold">Do more something</h1>
+                        <h1 class="text-white fw-bold">with your Ripple</h1>
+                        <p class="text-white py-3">Accept pay with wBitcoin</p>
+                        <a href="#" class="btn get-start__button text-white mt-5 py-2 px-5">Get Started</a>
+                        <div class="get-start__social d-flex mt-5">
+                            <a href="#">
+                                <i class="fa fa-twitter text-white fs-1 pe-4"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-paper-plane text-white fs-1 pe-4"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-paper-plane text-white fs-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative z-20">
+                        <div id="getStartAnimation" class="get-start__animation w-100 h-100 my-0 mx-auto"
+                            style="overflow:hidden;outline:none" title="" role="button" aria-label="animation"
+                            tabindex="0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="partner">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-md-between justify-content-center align-items-center">
+                <div class="col-4 col-md-2">
+                    <div class="partner__item mb-3">
+                        <a href="#">
+                            <img src="./assets/images/partner/1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="partner__item mb-3">
+                        <a href="#">
+                            <img src="./assets/images/partner/2.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="partner__item mb-3">
+                        <a href="#">
+                            <img src="./assets/images/partner/3.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="partner__item mb-3">
+                        <a href="#">
+                            <img src="./assets/images/partner/4.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="partner__item mb-3">
+                        <a href="#">
+                            <img src="./assets/images/partner/5.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="airdrop" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
+                    <div class="airdrop w-100 position-relative py-4 px-3">
+                        <div class="airdrop__header d-flex justify-content-between">
+                            <h1 class="text-white btn airdrop__header--title m-0 p-0 fs-1" style="line-height: 1;">
+                                Pre-sale</h1>
+                            <button id="btnInfo" class="btn airdrop__header--button text-white px-3 py-0">
+                                <i class="fa fa-info-circle text-white"></i> Info
+                            </button>
+                        </div>
+                        <div class="airdrop__exchange mt-4">
+                            <div class="airdrop__exchange--form">
+                                <div class="airdrop__exchange--form--group position-relative">
+                                    <div class="airdrop__exchange--select d-flex position-relative align-items-center">
+                                        <div class="select-box">
+                                            <div class="select-box__current d-inline-block position-relative"
+                                                tabindex="1">
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="coin_a_1"
+                                                        value="1" name="coin_a" checked="checked" />
+                                                    <div class="select-box__input-text ps-3 pe-5 py-2">
+                                                        <div
+                                                            class="airdrop__exchange--select--item d-flex align-items-center">
+                                                            <img src="./assets/images/wbitcoin.png"
+                                                                class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                                alt="">
+                                                            <div class="airdrop__exchange--select--item--text">
+                                                                <h5 class=" m-0 p-0 text-white">wBtc</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="coin_a_2"
+                                                        value="2" name="coin_a" />
+                                                    <div class="select-box__input-text ps-3 pe-5 py-2">
+                                                        <div
+                                                            class="airdrop__exchange--select--item d-flex align-items-center">
+                                                            <img src="./assets/images/binance-coin.png"
+                                                                class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                                alt="">
+                                                            <div class="airdrop__exchange--select--item--text">
+                                                                <h5 class=" m-0 p-0 text-white">BNB</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <i class="select-box__icon text-white fa fa-angle-down fs-3"
+                                                    aria-hidden="true"></i>
+                                            </div>
+
+                                        </div>
+                                        <div style="flex: 1 1 0%;">
+                                            <input type="text" id="coinA"
+                                                class="form-control text-end airdrop__exchange--input" value="10000000">
+                                        </div>
+                                    </div>
+                                    <ul class="select-box__list position-absolute start-0 end-0">
+                                        <li>
+                                            <label class="select-box__option" for="coin_a_1" aria-hidden="aria-hidden">
+                                                <div class="airdrop__exchange--select--item d-flex align-items-center">
+                                                    <img src="./assets/images/wbitcoin.png"
+                                                        class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                        alt="">
+                                                    <div class="airdrop__exchange--select--item--text">
+                                                        <h5 class=" m-0 p-0">wBtc</h5>
+                                                        <p class=" m-0 p-0">wBitcoin</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="select-box__option" for="coin_a_2" aria-hidden="aria-hidden">
+                                                <div class="airdrop__exchange--select--item d-flex align-items-center">
+                                                    <img src="./assets/images/binance-coin.png"
+                                                        class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                        alt="">
+                                                    <div class="airdrop__exchange--select--item--text">
+                                                        <h5 class=" m-0 p-0">BNB</h5>
+                                                        <p class=" m-0 p-0">Binance coin</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="airdrop__exchange--arrow d-flex justify-content-center">
+                                    <i class="fa fa-chevron-circle-down fs-3 d-inline-block"
+                                        style="color: #6B7280;"></i>
+                                </div>
+                                <div class="airdrop__exchange--form--group position-relative">
+                                    <div class="airdrop__exchange--select d-flex position-relative align-items-center">
+                                        <div class="select-box">
+                                            <div class="select-box__current d-inline-block position-relative"
+                                                tabindex="1">
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="coin_b_1"
+                                                        value="3" name="coin_b" checked />
+                                                    <div class="select-box__input-text ps-3 pe-5 py-2">
+                                                        <div
+                                                            class="airdrop__exchange--select--item d-flex align-items-center">
+                                                            <img src="./assets/images/wripple.png"
+                                                                class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                                alt="">
+                                                            <div class="airdrop__exchange--select--item--text">
+                                                                <h5 class=" m-0 p-0 text-white">wXRP</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <i class="select-box__icon text-white fa fa-angle-down fs-3"
+                                                    aria-hidden="true"></i>
+                                            </div>
+
+                                        </div>
+                                        <div style="flex: 1 1 0%;">
+                                            <input type="text" id="coinB" readonly
+                                                class="form-control text-end airdrop__exchange--input" value="">
+                                        </div>
+                                    </div>
+                                    <ul class="select-box__list position-absolute start-0 end-0">
+                                        <li>
+                                            <label class="select-box__option" for="coin_b_1" aria-hidden="aria-hidden">
+                                                <div class="airdrop__exchange--select--item d-flex align-items-center">
+                                                    <img src="./assets/images/wripple.png"
+                                                        class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                        alt="">
+                                                    <div class="airdrop__exchange--select--item--text">
+                                                        <h5 class=" m-0 p-0">wXRP</h5>
+                                                        <p class=" m-0 p-0">wRipple</p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="airdrop__exchange--form--button mt-4 d-none" id="btnBNB">
+                                    <button id="btnBuy"
+                                        class="btn airdrop__exchange--form--button--buy d-block w-100 py-3 fs-4 text-white">Buy</button>
+                                </div>
+                                <div class="airdrop__exchange--form--button mt-4" id="btnwBTC">
+                                    <div class="d-flex justify-content-between position-relative">
+                                        <h5
+                                            class="rounded-circle text-white airdrop__exchange--form--tep-1 p-2 d-flex justify-content-center align-items-center m-0">
+                                            1</h5>
+                                        <h5
+                                            class="rounded-circle text-white airdrop__exchange--form--tep-2 p-2 d-flex justify-content-center align-items-center m-0">
+                                            2</h5>
+                                        <div
+                                            class="airdrop__exchange--form--line position-absolute top-50 left-0 w-100">
+                                        </div>
+                                    </div>
+                                    <div class="airdrop__exchange--form--button--wrap mt-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <button id="btnApprove"
+                                                    class="btn airdrop__exchange--form--button--buy d-block w-100 py-3 fs-4 text-white">Approve</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <button disabled
+                                                    class="btn airdrop__exchange--form--button--buy d-block w-100 py-3 fs-4 text-white bg-gray">Buy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="airdrop__exchange--form--link mt-3 text-end">
+                                    <button class="btn btn-link text-gray" id="btnGetReferral">Get Referral</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="airdrop w-100 position-relative py-4 px-3 mt-4">
+                        <h5 class="text-white">wRipple airdrop</h5>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="text-white mb-0">1,000,000 wXRP</p>
+                            <button id="btnClaim" class="btn airdrop__exchange--form--button--buy py-1 fs-5 text-white rounded fw-normal">Claim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="airdropExchangeModalCountdown" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 position-relative">
+                        <h1 class="modal-title text-white text-center w-100" id="exampleModalLabel">wRipple pre-sale
+                        </h1>
+                        <button type="button"
+                            class="btn-close position-absolute d-flex justify-content-center align-items-center"
+                            data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body pb-4">
+                        <div class="airdrop__count-down d-flex justify-content-center space-x-8 py-3">
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center py-2 px-3 rounded">
+                                    <span id="days" class="text-white fs-1 fw-bold">00</span>
+                                </div>
+                                <div class="airdrop__count-down-item--label mt-3">
+                                    <span class="text-white text-uppercase">Days</span>
+                                </div>
+                            </div>
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center py-2 px-3 rounded">
+                                    <span id="hours" class="text-white fs-1 fw-bold">00</span>
+                                </div>
+                                <div class="airdrop__count-down-item--label mt-3">
+                                    <span class="text-white text-uppercase">Hours</span>
+                                </div>
+                            </div>
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center py-2 px-3 rounded">
+                                    <span id="minutes" class="text-white fs-1 fw-bold">00</span>
+                                </div>
+                                <div class="airdrop__count-down-item--label mt-3">
+                                    <span class="text-white text-uppercase">Minutes</span>
+                                </div>
+                            </div>
+                            <div class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                <div class="airdrop__count-down-item--number lh-1 text-center py-2 px-3 rounded">
+                                    <span id="seconds" class="text-white fs-1 fw-bold">00</span>
+                                </div>
+                                <div class="airdrop__count-down-item--label mt-3">
+                                    <span class="text-white text-uppercase">Secconds</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="airdrop__count-down--info mt-4 text-center">
+                            <p class="mb-0 pb-0 text-white fs-5">Listing Pancakeswap September 28th 2021, 14:57 (your
+                                time)</p>
+                            <p class="mb-0 pb-0 text-white fs-5">Buy with wBTC: 250,000,000 wXRP/10,000,000 wBTC</p>
+                            <p class="mb-0 pb-0 text-white fs-5">Buy with BNB: 30,000,000/0.01 BNB</p>
+                            <p class="mb-0 pb-0 text-white fs-5">The tokens will be automatically transferred to the
+                                participant's wallet immediately</p>
+                            <p class="mb-0 pb-0">
+                                <a href="#" class="text-white fs-5 text-decoration-none">
+                                    <img src="./assets/images/bsc.png" class="img-fluid"
+                                        style="width: 2rem; height: 2rem;" alt=""> Contract address:
+                                    0xbbc9fa4b395fee68465c2cd4a88cde267a34ed2a
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="howtobuy" class="mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div id="howToBuyAnimation"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="how-to-buy">
+                        <h2>How to buy wRipple by wBitcoin on Trust Wallet</h2>
+                        <ul class="list-unstyled mb-2">
+                            <li>
+                                <img src="./assets/images/diamond.png" class="img-fluid how-to-buy__img mb-2" /> Open your TRUST WALLET
+                            </li>
+                            <li>
+                                <img src="./assets/images/diamond.png" class="img-fluid how-to-buy__img mb-2" /> Go to DApps
+                            </li>
+                            <li>
+                                <img src="./assets/images/diamond.png" class="img-fluid how-to-buy__img mb-2" /> Copy this link and paste into your Apps search bar
+                            </li>
+                        </ul>
+                        <div id="btnCopyLink" class="how-to-buy__copy d-flex align-items-center rounded p-2">
+                            <p style="word-break: break-all;" class="mb-0">https://wripple.net?address=0x000000000000000000000000000000000000dead</p>
+                            <img src="./assets/images/copy.png" class="img-fluid how-to-buy__img mb-2"/>
+                        </div>
+                        <ul class="list-unstyled mt-2">
+                            <li>
+                                <img src="./assets/images/diamond.png" class="img-fluid how-to-buy__img mb-2" /> 
+                                Select Binance Smart Chain Network
+                            </li>
+                            <li>
+                                <img src="./assets/images/diamond.png" class="img-fluid how-to-buy__img mb-2" /> 
+                                Enter the amount of wBitcoin you want to pay
+                            </li>
+                            <li>
+                                <img src="./assets/images/diamond.png" class="img-fluid how-to-buy__img mb-2" /> 
+                                Click Approve and connect your wallet
+                            </li>
+                            <li>
+                                <img src="./assets/images/diamond.png" class="img-fluid how-to-buy__img mb-2" /> 
+                                After approve click Buy - The amount of wRipple will automatically transfer to your wallet
+                            </li>
+                        </ul>
+                        <div class="how-to-buy__copy rounded p-2">
+                            <p class="mb-0">10,000,000 wBTC for 250,000,000 wRipple is also accepted</p>
+                            <p class="mb-0">0.01 BNB for 30,000,000 wRipple</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="how-to-buy__note mt-5">
+                        <ul class="list-unstyled">
+                            <li>⚡ ️Smart contract wBitcoin: <a href="https://bscscan.com/token/0xa01b9cafe2230093fbf0000b43701e03717f77ce" class="underline break-all" target="_blank">0xa01b9cafe2230093fbf0000b43701e03717f77ce</a></li>
+                            <li>⚡️ wBitcoin (wBTC) can be obtained through our Referral Program or from DEXs/exchanges.</li>
+                            <li>⚡ ️Payment evaluation happens automatically, but with a few minutes delay. When payment is detected, an Accept wBitcoin is automatically send wRipple to your wallet.</li>
+                            <li>⚡️ wRipple-BEP20 is supported (Binance Smart Chain)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="mt-5">
+        <div class="container">
+            <h1 class="text-center">Roadmap</h1>
+            <div class="roadmap mt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-6 mb-3">
+                        <div class="roadmap__item px-3 py-4">
+                            <h2 class="text-center">Q2</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Token via Airdrop wRipple</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Pre-sale</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Public sale</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Community Marketing Fund</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-3">
+                        <div class="roadmap__item px-3 py-4">
+                            <h2 class="text-center">Q3</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Coinmarketcap listing</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Coingecko listing</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Heavy marketing campaign</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Distribution airdrop</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Pancake Swap Listing</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">First exchange listing (CEX)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-3">
+                        <div class="roadmap__item px-3 py-4">
+                            <h2 class="text-center">Q4</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Launch Pad (Decentralize Finance )</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Payment Gateway Beta</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Marketing Funds</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-3">
+                        <div class="roadmap__item px-3 py-4">
+                            <h2 class="text-center">Q1 - 2022</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Payment Gateway Platform</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">4 More CEX Listings</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span class="ms-2">Influencer Marketing Partnerships</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="py-5 mt-5">
+        <div class="container">
+            <div class="row mb-2 mb-sm-4 align-items-end">
+                <div class="col-12 col-md-5 text-center text-md-left text-center">
+                    <div class="copyrights d-flex align-items-center justify-content-md-start justify-content-center">
+                        <img src="./assets/images/wripple.png" class="img-fluid" alt="" style="width: 2rem; height: 2rem;">
+                        <span class="fs-4 text-white ms-2">wRipple protocol</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 text-center text-md-right small mt-3 mt-md-0">
+                    <a href="#partner" class="text-white text-decoration-none">Partner</a>
+                    <span class="px-1"> | </span>
+                    <a href="#airdrop" class="text-white text-decoration-none">Airdrop</a>
+                    <span class="px-1"> | </span>
+                    <a href="#howtobuy" class="text-white text-decoration-none">How To Buy</a>
+                    <span class="px-1"> | </span>
+                    <a href="#roadmap" class="text-white text-decoration-none">Roadmap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"
+        integrity="sha512-m0RQU4SBx0p/bLwRiI4fJBGRafVLZ4s86wRe1+OAx5EXbcWiS/X1jvYdJQRD8jOoIVl+WTyVeMawUWVCh1O8+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/vendor/toastr/build/toastr.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
